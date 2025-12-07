@@ -1,4 +1,4 @@
-# Despliegue de CMS WordPress en Alta Disponibilidad en AWS
+<img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/1ab1f578-ac61-40bf-9a1b-1215191d6728" /># Despliegue de CMS WordPress en Alta Disponibilidad en AWS
 
 ## Arquitectura de 3 Capas (Balanceo + Backend/NFS + Base de Datos)
 
@@ -103,14 +103,46 @@ Este diseño garantiza que el acceso externo nunca llega directamente a los serv
 ## 5.Diseño de la Infraestructura en AWS
 
    * 5.1. VPC y Subredes
+VPC
 ![Descripción de la imagen](capturas/VPC-Juanma.png)
+Subredes
+![Descripción de la imagen](capturas/Subredes-Juanma.png)
 
+* Esquema de la red
+publica 10.0.0.0/16 > 10.0.10.0/24
+privada1 10.0.0.0/16 > 10.0.20.0/24
+privada2 10.0.0.0/16 > 10.0.30.0/24
+
+
+-*Balanceador* 10.0.10.10 Int Internet
+10.0.20.15 int RED WEBS Y NFS
+-*NFS* 10.0.20.20
+-*WEB1* 10.0.20.10 int NFS
+10.0.30.20 int DB
+-*WEB2* 10.0.20.11 int NFS
+10.0.30.20 int DB
+-*DB* 10.0.30.3
 
    * 5.2. Internet Gateway
+
+![Descripción de la imagen](capturas/IGW-Juanma.png)
+
    * 5.4. Tablas de Enrutamiento
+
+![Descripción de la imagen](capturas/TablaEnrutamiento-Juanma.png)
+
    * 5.5. Grupos de Seguridad
+
+![Descripción de la imagen](capturas/GrupoSeguridad-Juanma.png)
+
    * 5.6. ACLs de Red
+
+![Descripción de la imagen](capturas/ACL-Juanma.png)
+
 6. [Capa 1 — Balanceador de Carga (Pública)](#capa-1--balanceador-de-carga-pública)
+
+[Ver balanceador.sh en el repositorio](Scripts_aprov/balanceador.sh)
+
 
 7. [Capa 2 — Backend + Servidor NFS (Privada)](#capa-2--backend--servidor-nfs-privada)
 
