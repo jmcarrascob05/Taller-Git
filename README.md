@@ -28,7 +28,9 @@
 
 9. Scripts de Aprovisionamiento
 
-10. Conclusiones
+10. Pagina Segura
+
+11. Conclusión
 
 ## 1.Descripción General
 
@@ -168,6 +170,11 @@ Instancia DB
 -Si quieres ver el [nfs.sh](Scripts_aprov/nfs.sh) pincha en el.  
 -Si quieres ver el [db.sh](Scripts_aprov/db.sh) pincha en el.  
 
-## 13. Conclusión
+## 10. Pagina Segura  
+Comprobación de la implantación del certificado para una pagina HTTPS  
+
+![Descripción de la imagen](capturas/DB-Juanma.png)
+
+## 11. Conclusión
 
 El despliegue realizado demuestra cómo una arquitectura en tres capas permite separar correctamente el balanceo de carga, la aplicación y el almacenamiento de datos, logrando un entorno más *seguro, escalable y fácil de mantener*. Gracias a los servicios de *AWS*, ha sido posible crear una infraestructura modular capaz de aislar componentes *críticos*, automatizar su provisión mediante scripts aparte de garantizar una *alta disponibilidad* para WordPress. Este modelo no solo mejora la fiabilidad del sistema, sino que también facilita futuras *ampliaciones*, convirtiéndolo en una solución profesional y aplicable a proyectos reales en producción.
