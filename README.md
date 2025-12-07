@@ -2,10 +2,10 @@
 
 ## Arquitectura de 3 Capas (Balanceo + Backend/NFS + Base de Datos)
 
-**Práctica:** Despliegue de CMS WordPress en Alta Disponibilidad
-**Alumno:** *Juan Manuel Carrasco Benítez*
-**Curso:** ASIR II
-**Fecha:** *07/12/2025*
+**Práctica:** Despliegue de CMS WordPress en Alta Disponibilidad  
+**Alumno:** *Juan Manuel Carrasco Benítez*  
+**Curso:** ASIR II  
+**Fecha:** *07/12/2025*  
 **URL de la aplicación:** *[https://juanma-aws.sytes.net/](https://juanma-aws.sytes.net/)*
 
 ## Índice
