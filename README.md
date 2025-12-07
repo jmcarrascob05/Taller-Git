@@ -32,11 +32,11 @@
 
 11. Conclusión
 
-## 1.Descripción General
+## 1. Descripción General
 
 Este proyecto consiste en el despliegue de un CMS WordPress en AWS utilizando una arquitectura de tres capas diseñada para garantizar **alta disponibilidad, seguridad y escalabilidad**. La capa pública actúa como punto de entrada mediante un balanceador Apache, la capa intermedia tiene los servidores backend y un sistema de archivos compartido mediante NFS para mantener sincronizado el contenido de la WEB. La base de datos se encuentra en una capa privada, permitiendo que únicamente los servidores web tengan acceso a ella. Gracias a esto se le agrega un nivel mayor de seguridad al eslabon más débil de la cadena(DB). Todo el entorno se despliega de manera automatizada utilizando scripts en BASH y se protege mediante grupos de seguridad y ACLs de red. Además, se integra un dominio propio y la posibilidad de habilitar HTTPS con Certbot(Lo cual se ha realizado en la practica).
 
-## 2.Objetivos de la Práctica
+## 2. Objetivos de la Práctica
 
 * Desplegar WordPress en AWS con arquitectura distribuida en 3 capas.
 * Asegurar **alta disponibilidad** mediante balanceo de carga.
@@ -46,7 +46,7 @@ Este proyecto consiste en el despliegue de un CMS WordPress en AWS utilizando un
 * Implementar **HTTPS** sobre **dominio propio**.
 * Personalizar WordPress con el nombre del alumno.
 
-## 3.Arquitectura General del Proyecto
+## 3. Arquitectura General del Proyecto
 ### Infraestructura
 
 La infraestructura se basa en una arquitectura segmentada en **tres capas**, diseñada para mejorar la **seguridad, escalabilidad y control del entorno**. Cada capa opera en una subred específica dentro de la VPC y cumple un rol concreto: el balanceo de tráfico público, el procesamiento interno de WordPress y el almacenamiento compartido mediante NFS, así como la gestión aislada de la base de datos. Esta separación permite un **flujo ordenado, seguro y fácilmente escalable** según la carga del proyecto.
@@ -93,7 +93,7 @@ Este diseño garantiza que el acceso externo nunca llega directamente a los serv
                              │ SG: Sólo WEB1/WEB2       │
                              └──────────────────────────┘
 
-## 4.Requisitos Previos
+## 4. Requisitos Previos
 
 * Cuenta de AWS activa
 * AWS CLI configurado
@@ -102,7 +102,7 @@ Este diseño garantiza que el acceso externo nunca llega directamente a los serv
 * SSH en instancias EC2
 * Certbot (opcional)
 
-## 5.Diseño de la Infraestructura en AWS
+## 5. Diseño de la Infraestructura en AWS
 
    * 5.1. VPC y Subredes  
 
@@ -173,7 +173,7 @@ Instancia DB
 ## 10. Pagina Segura  
 Comprobación de la implantación del certificado para una pagina HTTPS  
 
-![Descripción de la imagen](capturas/DB-Juanma.png)
+![Descripción de la imagen](capturas/HTTPS-Juanma.png)
 
 ## 11. Conclusión
 
