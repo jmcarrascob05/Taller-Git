@@ -17,9 +17,9 @@
 5. Diseño de la Infraestructura en AWS
    * 5.1. VPC y Subredes
    * 5.2. Internet Gateway
-   * 5.4. Tablas de Enrutamiento
-   * 5.5. Grupos de Seguridad
-   * 5.6. ACLs de Red
+   * 5.3. Tablas de Enrutamiento
+   * 5.4. Grupos de Seguridad
+   * 5.5. ACLs de Red
 6. Capa 1 — Balanceador de Carga (Pública)
 
 7. Capa 2 — Backend + Servidor NFS (Privada)
