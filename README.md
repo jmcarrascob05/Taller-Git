@@ -128,15 +128,15 @@ privada2 10.0.0.0/16 > 10.0.30.0/24
 
 ![Descripción de la imagen](capturas/IGW-Juanma.png)
 
-   * 5.4. Tablas de Enrutamiento
+   * 5.3. Tablas de Enrutamiento
 
 ![Descripción de la imagen](capturas/TablaEnrutamiento-Juanma.png)
 
-   * 5.5. Grupos de Seguridad
+   * 5.4. Grupos de Seguridad
 
 ![Descripción de la imagen](capturas/GrupoSeguridad-Juanma.png)
 
-   * 5.6. ACLs de Red
+   * 5.5. ACLs de Red
 
 ![Descripción de la imagen](capturas/ACL-Juanma.png)
 
