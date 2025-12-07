@@ -103,7 +103,7 @@ Este diseño garantiza que el acceso externo nunca llega directamente a los serv
 ## 5.Diseño de la Infraestructura en AWS
 
    * 5.1. VPC y Subredes
-![Descripción de la imagen](capturas/VPC-Juanma)
+![Descripción de la imagen](capturas/VPC-Juanma.png)
 
 
    * 5.2. Internet Gateway
