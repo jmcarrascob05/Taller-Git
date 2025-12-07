@@ -102,7 +102,8 @@ Este diseño garantiza que el acceso externo nunca llega directamente a los serv
 
 ## 5.Diseño de la Infraestructura en AWS
 
-   * 5.1. VPC y Subredes
+   * 5.1. VPC y Subredes  
+
 VPC
 ![Descripción de la imagen](capturas/VPC-Juanma.png)
 Subredes
