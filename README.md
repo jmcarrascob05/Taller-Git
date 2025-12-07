@@ -10,25 +10,25 @@
 
 ## Índice
 
-1. [Descripción General](#descripción-general)
-2. [Objetivos de la Práctica](#objetivos-de-la-práctica)
-3. [Arquitectura General del Proyecto](#arquitectura-general-del-proyecto)
-4. [Requisitos Previos](#requisitos-previos)
-5. [Diseño de la Infraestructura en AWS](#diseño-de-la-infraestructura-en-aws)
+1. Descripción General
+2. Objetivos de la Práctica
+3. Arquitectura General del Proyecto
+4. Requisitos Previos
+5. Diseño de la Infraestructura en AWS
    * 5.1. VPC y Subredes
    * 5.2. Internet Gateway
    * 5.4. Tablas de Enrutamiento
    * 5.5. Grupos de Seguridad
    * 5.6. ACLs de Red
-6. [Capa 1 — Balanceador de Carga (Pública)](#capa-1--balanceador-de-carga-pública)
+6. Capa 1 — Balanceador de Carga (Pública)
 
-7. [Capa 2 — Backend + Servidor NFS (Privada)](#capa-2--backend--servidor-nfs-privada)
+7. Capa 2 — Backend + Servidor NFS (Privada)
 
-8. [Capa 3 — Servidor de Base de Datos (Privada)](#capa-3--servidor-de-base-de-datos-privada)
+8. Capa 3 — Servidor de Base de Datos (Privada)
 
-9. [Scripts de Aprovisionamiento](#scripts-de-aprovisionamiento)
+9. Scripts de Aprovisionamiento
 
-13. [Conclusiones](#conclusiones)
+10. Conclusiones
 
 ## 1.Descripción General
 
@@ -109,19 +109,19 @@ Subredes
 ![Descripción de la imagen](capturas/Subredes-Juanma.png)
 
 * Esquema de la red
-publica 10.0.0.0/16 > 10.0.10.0/24
-privada1 10.0.0.0/16 > 10.0.20.0/24
-privada2 10.0.0.0/16 > 10.0.30.0/24
+publica 10.0.0.0/16 > 10.0.10.0/24  
+privada1 10.0.0.0/16 > 10.0.20.0/24  
+privada2 10.0.0.0/16 > 10.0.30.0/24  
 
 
 -*Balanceador* 10.0.10.10 Int Internet
-10.0.20.15 int RED WEBS Y NFS
--*NFS* 10.0.20.20
+10.0.20.15 int RED WEBS Y NFS  
+-*NFS* 10.0.20.20  
 -*WEB1* 10.0.20.10 int NFS
-10.0.30.20 int DB
+10.0.30.20 int DB  
 -*WEB2* 10.0.20.11 int NFS
-10.0.30.20 int DB
--*DB* 10.0.30.3
+10.0.30.20 int DB  
+-*DB* 10.0.30.3  
 
    * 5.2. Internet Gateway
 
@@ -162,10 +162,10 @@ Instancia DB
 
 9. [Scripts de Aprovisionamiento](#scripts-de-aprovisionamiento)
 
--Si quieres ver el [balanceador.sh](Scripts_aprov/balanceador.sh) pincha en el.
--Si quieres ver el [web.sh](Scripts_aprov/web.sh) pincha en el.
--Si quieres ver el [nfs.sh](Scripts_aprov/nfs.sh) pincha en el.
--Si quieres ver el [db.sh](Scripts_aprov/db.sh) pincha en el.
+-Si quieres ver el [balanceador.sh](Scripts_aprov/balanceador.sh) pincha en el.  
+-Si quieres ver el [web.sh](Scripts_aprov/web.sh) pincha en el.  
+-Si quieres ver el [nfs.sh](Scripts_aprov/nfs.sh) pincha en el.  
+-Si quieres ver el [db.sh](Scripts_aprov/db.sh) pincha en el.  
 
 13. [Conclusiones](#conclusiones)
 
