@@ -141,7 +141,7 @@ privada2 10.0.0.0/16 > 10.0.30.0/24
 
 6. [Capa 1 — Balanceador de Carga (Pública)](#capa-1--balanceador-de-carga-pública)
 
-[Ver balanceador.sh en el repositorio](Scripts_aprov/balanceador.sh)
+Si quieres ver el [balanceador.sh](Scripts_aprov/balanceador.sh) pincha en el.
 
 
 7. [Capa 2 — Backend + Servidor NFS (Privada)](#capa-2--backend--servidor-nfs-privada)
