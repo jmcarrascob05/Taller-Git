@@ -141,13 +141,32 @@ privada2 10.0.0.0/16 > 10.0.30.0/24
 
 6. [Capa 1 — Balanceador de Carga (Pública)](#capa-1--balanceador-de-carga-pública)
 
-Si quieres ver el [balanceador.sh](Scripts_aprov/balanceador.sh) pincha en el.
-
+Instancia Balanceador
+![Descripción de la imagen](capturas/Balanceador-Juanma.png)
 
 7. [Capa 2 — Backend + Servidor NFS (Privada)](#capa-2--backend--servidor-nfs-privada)
 
+Instancia WEB1
+![Descripción de la imagen](capturas/WEB1-Juanma.png)
+
+Instancia WEB2
+![Descripción de la imagen](capturas/WEB2-Juanma.png)
+
+Instancia NFS
+![Descripción de la imagen](capturas/NFS-Juanma.png)
+
 8. [Capa 3 — Servidor de Base de Datos (Privada)](#capa-3--servidor-de-base-de-datos-privada)
+
+Instancia DB
+![Descripción de la imagen](capturas/DB-Juanma.png)
 
 9. [Scripts de Aprovisionamiento](#scripts-de-aprovisionamiento)
 
+-Si quieres ver el [balanceador.sh](Scripts_aprov/balanceador.sh) pincha en el.
+-Si quieres ver el [web.sh](Scripts_aprov/web.sh) pincha en el.
+-Si quieres ver el [nfs.sh](Scripts_aprov/nfs.sh) pincha en el.
+-Si quieres ver el [db.sh](Scripts_aprov/db.sh) pincha en el.
+
 13. [Conclusiones](#conclusiones)
+
+El despliegue realizado demuestra cómo una arquitectura en tres capas permite separar correctamente el balanceo de carga, la aplicación y el almacenamiento de datos, logrando un entorno más *seguro, escalable y fácil de mantener*. Gracias a los servicios de *AWS*, ha sido posible crear una infraestructura modular capaz de aislar componentes *críticos*, automatizar su provisión mediante scripts aparte de garantizar una *alta disponibilidad* para WordPress. Este modelo no solo mejora la fiabilidad del sistema, sino que también facilita futuras *ampliaciones*, convirtiéndolo en una solución profesional y aplicable a proyectos reales en producción.
