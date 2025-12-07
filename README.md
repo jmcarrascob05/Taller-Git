@@ -1,4 +1,4 @@
-<img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/1ab1f578-ac61-40bf-9a1b-1215191d6728" /># Despliegue de CMS WordPress en Alta Disponibilidad en AWS
+# Despliegue de CMS WordPress en Alta Disponibilidad en AWS
 
 ## Arquitectura de 3 Capas (Balanceo + Backend/NFS + Base de Datos)
 
